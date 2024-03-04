@@ -21,10 +21,15 @@ manifest:
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
 
+    - name: ddone
+      url-base: https://github.com/Deedone
+
   projects:
     - name: zephyr
-      remote: xen-troops
-      revision: "b1ab92967739d06599231d0ee4f4c8d68a6681b0"
+      # remote: xen-troops
+      # revision: "b1ab92967739d06599231d0ee4f4c8d68a6681b0"
+      remote: ddone
+      revision: "zephyr-v3.6.0-xt-v7"
       west-commands: scripts/west-commands.yml
 
     - name: aos_core_lib_cpp
@@ -36,12 +41,14 @@ manifest:
       revision: "v7.2.2"
 
     - name: zephyr-xenlib
-      remote: xen-troops
-      revision: "f93f5d6b59ce9c39b1a8ef980530dc5ae372c93f"
+      # remote: xen-troops
+      # revision: "f93f5d6b59ce9c39b1a8ef980530dc5ae372c93f"
+      remote: ddone
+      revision: "wip_zephyr_3.6-v2"
 
     - name: zephyr-optee-client
-      remote: xen-troops
-      revision: "9e8e574639672d34b6452741b43537cb4b03eb90"
+      remote: ddone
+      revision: "wip_zephyr_3.6-v1"
 
     - name: littlefs
       remote: zephyrproject-rtos
